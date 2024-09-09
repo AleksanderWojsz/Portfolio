@@ -6,6 +6,7 @@
 body {
     font-family: "Special Elite", serif;
     background-color: #f8f8f8;
+  background-image: url('src/assets/img.png');
 }
 
 /* Paper sheet */
@@ -16,7 +17,7 @@ body {
   padding-right: 10px;
   width: 400px;
   height: 350px;
-  background: #fff;
+  background: #f8f8f8;
   border-radius: 2px;
 }
 
@@ -54,8 +55,6 @@ body {
 .paper:hover::after {
   right: 5px;
 }
-
-/* Folded paper (Sidebar) */
 
 
 

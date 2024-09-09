@@ -10,7 +10,8 @@
             <div style="word-wrap: break-word;" class="mt-5 text-1xl max-w-[400px]" >Ala ma kota i mruczka psa i rybke i papuge i malpe i krowe w stodole i swinie i kury w zagrodzie</div>
         </div>
         <div class="w-1/2 max-w-[600px] h-auto">
-            <img src="/src/assets/sketch_photo.png" alt="face sketch">
+<!--            <img src="/src/assets/sketch_photo.png" alt="face sketch">-->
+            <img src="/src/assets/myphoto_edge.jpg" alt="face sketch">
         </div>
     </div>
 </template>

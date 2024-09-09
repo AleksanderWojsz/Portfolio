@@ -45,8 +45,7 @@ import Sidebar from "@/components/Sidebar.vue";
     margin: 0 auto;
 
     width: fit-content;
-    //height: 100%;
-    height: 10000px;
+    height: 100%;
 }
 
 .right-col {
