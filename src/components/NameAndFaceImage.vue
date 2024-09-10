@@ -12,7 +12,7 @@
             </div>
         </div>
         <div id="b" class="w-3/4 md:w-1/2 max-w-[600px] h-auto">
-            <img src="/src/assets/myphoto_edge.jpg" alt="face sketch">
+            <img src="/src/assets/my_photo.png" alt="face sketch">
         </div>
     </div>
 </template>
