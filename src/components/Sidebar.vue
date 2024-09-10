@@ -1,5 +1,14 @@
 <script setup>
 
+import ContactPopup from "@/components/ContactPopup.vue";
+import {ref} from "vue";
+
+function closeContactPopup() {
+    show_popup.value = false;
+}
+
+const show_popup = ref(false);
+
 </script>
 
 <template>
@@ -11,9 +20,10 @@
             <img alt="LinkedIn" src="/src/assets/linkedin.png" width="50" height="50">
         </a>
         <div class="folded-list-element"></div>
-        <div class="folded-list-element">Contact</div>
+        <div class="folded-list-element" style="cursor: pointer;" v-on:click="show_popup = true">Contact</div>
         <RouterLink to="/other-stuff" class="folded-list-element">Other stuff</RouterLink>
     </div>
+    <ContactPopup v-if="show_popup" v-bind:closeContactPopup="closeContactPopup"></ContactPopup>
 </template>
 
 <style scoped>

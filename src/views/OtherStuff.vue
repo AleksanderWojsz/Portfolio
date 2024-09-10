@@ -3,7 +3,9 @@
 </script>
 
 <template>
-    Other stuff
+    <div class="flex flex-col items-center w-[75vw] h-[2000px]">
+        Other stuff
+    </div>
 </template>
 
 <style scoped>
