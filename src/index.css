@@ -17,7 +17,8 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 40px;
-  width: 400px;
+  width: calc(100vw * 0.80);
+  max-width: 400px;
   height: auto;
   background: #f9f9ff;
   border-radius: 2px;
@@ -66,7 +67,8 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 40px;
-  width: 400px;
+  width: calc(100vw * 0.80);
+  max-width: 400px;
   height: auto;
   background: #f9f9ff;
   border-radius: 2px;
@@ -103,7 +105,8 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 40px;
-  width: 400px;
+  width: calc(100vw * 0.80);
+  max-width: 400px;
   height: auto;
   background: #f9f9ff;
   border-radius: 2px;

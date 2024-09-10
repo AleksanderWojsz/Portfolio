@@ -32,15 +32,5 @@
 </template>
 
 <style scoped>
-    list_el {
-        position: relative;
-        padding-left: 20px;
-        margin-left: 20px;
-    }
 
-    list_el::before {
-        content: "-";
-        position: absolute;
-        left: 0;
-    }
 </style>

@@ -10,7 +10,7 @@ import ClassesTaken from "@/components/ClassesTaken.vue";
 <template>
 
     <NameAndFaceImage></NameAndFaceImage>
-    <div class="flex flex-row justify-center gap-x-[10vw] my-[10vh]">
+    <div class="flex flex-col justify-center items-center md:flex-row md:items-start gap-x-[10vw] gap-y-[15vw] my-[10vh]">
         <DoneProjects></DoneProjects>
         <ClassesTaken></ClassesTaken>
     </div>
