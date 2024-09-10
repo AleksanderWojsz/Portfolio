@@ -14,10 +14,12 @@ body {
 
 .paper {
   position: relative;
+  padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 40px;
   width: 400px;
-  height: 350px;
-  background: #f8f8f8;
+  height: auto;
+  background: #f9f9ff;
   border-radius: 2px;
 }
 
@@ -57,4 +59,126 @@ body {
 }
 
 
+/* Paper left */
 
+.paper-right {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  width: 400px;
+  height: auto;
+  background: #f9f9ff;
+  border-radius: 2px;
+}
+
+.paper-right::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0,0,0,.7);
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.paper-right::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+.paper-right:hover::after {
+  box-shadow: 0 2px 14px rgba(0,0,0,.4);
+}
+
+.paper-right:hover::after {
+  right: 5px;
+}
+
+/* Paper right */
+
+.paper-left {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  width: 400px;
+  height: auto;
+  background: #f9f9ff;
+  border-radius: 2px;
+}
+
+.paper-left::before {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0,0,0,.7);
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.paper-left::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.paper-left:hover::before {
+  box-shadow: 0 2px 14px rgba(0,0,0,.4);
+}
+
+.paper-left:hover::before {
+  left: 5px;
+}
+
+
+/* Paper wide */
+
+.paper-wide {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  width: 75%;
+  margin: 0 auto;
+  height: auto;
+  background: #f9f9ff;
+  border-radius: 2px;
+}
+
+.paper-wide::before,
+.paper-wide::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0,0,0,.7);
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.paper-wide::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.paper-wide::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+.paper-wide:hover::before,
+.paper-wide:hover::after {
+  box-shadow: 0 2px 14px rgba(0,0,0,.4);
+}
+
+.paper-wide:hover::before {
+  left: 5px;
+}
+
+.paper-wide:hover::after {
+  right: 5px;
+}

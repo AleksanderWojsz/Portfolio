@@ -12,7 +12,7 @@
         </a>
         <div class="folded-list-element"></div>
         <div class="folded-list-element">Contact</div>
-        <div class="folded-list-element">Other stuff</div>
+        <RouterLink to="/other-stuff" class="folded-list-element">Other stuff</RouterLink>
     </div>
 </template>
 
