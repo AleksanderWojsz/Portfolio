@@ -29,15 +29,15 @@ onMounted(() => {
     <div class="centred-col pb-[40px]">
 
         <div v-if="isMobileView === false" id="left-col" class="left-col">
-            <div id="sidebar" class="fixed" style="z-index: 100;top: 25%;">
+            <div id="sidebar" class="fixed" style="z-index: 100; top: 25%;">
                 <Sidebar></Sidebar>
             </div>
         </div>
-        <div v-else class="fixed mt-2" style="z-index: 100; left: 50%; transform: translate(-50%, 0);">
+        <div v-else class="fixed mt-2" style="z-index: 100; left: 50%;">
             <NavBar></NavBar>
         </div>
 
-        <div class="pt-20">
+        <div class="pt-[90px]">
             <RouterView></RouterView>
         </div>
     </div>

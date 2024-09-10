@@ -12,7 +12,9 @@ const show_popup = ref(false);
 </script>
 
 <template>
-    <div class="folded-list mr-4">
+    <!--  transform is here and not in `App.vue` because `ContactPopup` has fixed position  -->
+    <!--  otherwise ContactPopup would be relative to NavBar  -->
+    <div class="folded-list mr-4" style="transform: translate(-50%, 0);">
         <div class="folded-list-element" style="cursor: pointer;" v-on:click="show_popup = true">Contact</div>
         <RouterLink to="/other-stuff" class="folded-list-element">Other stuff</RouterLink>
         <a class="folded-list-element" href="https://github.com/AleksanderWojsz">
