@@ -19,7 +19,7 @@
 
 <style scoped>
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:919px) {
     #parent {
         display:flex;
         flex-flow: column;

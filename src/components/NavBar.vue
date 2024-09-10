@@ -15,7 +15,6 @@ const show_popup = ref(false);
     <div class="folded-list mr-4">
         <div class="folded-list-element" style="cursor: pointer;" v-on:click="show_popup = true">Contact</div>
         <RouterLink to="/other-stuff" class="folded-list-element">Other stuff</RouterLink>
-        <div class="folded-list-element"></div>
         <a class="folded-list-element" href="https://github.com/AleksanderWojsz">
             <img alt="GitHub" src="/src/assets/github-mark.png" width="50" height="50">
         </a>
@@ -31,7 +30,7 @@ const show_popup = ref(false);
 /* https://www.geekboots.com/css/folding-paper-effect */
 .folded-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .folded-list-element {
@@ -47,11 +46,11 @@ const show_popup = ref(false);
 }
 
 .folded-list-element:nth-child(odd) {
-    transform: skewX(-10deg);
+    transform: skewY(-10deg);
 }
 
 .folded-list-element:nth-child(even) {
-    transform: skewX(10deg);
+    transform: skewY(10deg);
 }
 
 
