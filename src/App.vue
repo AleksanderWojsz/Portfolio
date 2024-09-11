@@ -7,12 +7,12 @@ import NavBar from "@/components/NavBar.vue";
 const isMobileView = ref(false)
 function checkWindowSize() {
     isMobileView.value = window.innerWidth < 1400;
+
+    // Sets `left` attribute of `left-col` to minus its width
     document.getElementById("left-col").style.left = "-" + document.getElementById("sidebar").offsetWidth.toString() + "px"
 }
 
 onMounted(() => {
-    // Sets `left` attribute of `left-col` to minus its width
-
     checkWindowSize()
 
     window.addEventListener('resize', function(event){
@@ -29,11 +29,11 @@ onMounted(() => {
     <div class="centred-col pb-[40px]">
 
         <div v-if="isMobileView === false" id="left-col" class="left-col">
-            <div id="sidebar" class="fixed" style="z-index: 100; top: 25%;">
+            <div id="sidebar" class="fixed fade-in-top" style="z-index: 100; top: 25%;">
                 <Sidebar></Sidebar>
             </div>
         </div>
-        <div v-else class="fixed mt-2" style="z-index: 100; left: 50%;">
+        <div v-else class="fixed mt-4 fade-in-top" style="z-index: 100; left: 50%;">
             <NavBar></NavBar>
         </div>
 

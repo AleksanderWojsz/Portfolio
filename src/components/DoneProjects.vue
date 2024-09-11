@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="fade-in-left">
         <p class="w-fit m-auto text-xl">Some projects I have done</p>
 
         <div class="paper flex flex-col space-y-2 mt-4 pt-4">

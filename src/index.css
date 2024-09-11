@@ -9,179 +9,279 @@ body {
     background-image: url('/src/assets/background.png');
 }
 
+/* Animations */
+
+.fade-in {
+    animation: fadeInAnimation;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+}
+
+.fade-in-fast {
+    animation: fadeInAnimation;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+.fade-in-left {
+    animation: fadeInAnimationLeft;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+}
+
+.fade-in-fast-left {
+    animation: fadeInAnimationLeft;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeInAnimationLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+
+.fade-in-right {
+    animation: fadeInAnimationRight;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+}
+
+.fade-in-fast-right {
+    animation: fadeInAnimationRight;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeInAnimationRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+
+.fade-in-top {
+    animation: fadeInAnimationTop;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+}
+
+.fade-in-fast-top {
+    animation: fadeInAnimationTop;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeInAnimationTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+
+
+
 /* Paper sheet */
 /* https://codepen.io/martinwolf/pen/GRaWPy */
 
 .paper {
-  position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 40px;
-  width: calc(100vw * 0.80);
-  max-width: 400px;
-  height: auto;
-  background: #f9f9ff;
-  border-radius: 2px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    width: calc(100vw * 0.80);
+    max-width: 400px;
+    height: auto;
+    background: #f9f9ff;
+    border-radius: 2px;
 }
 
 .paper::before,
 .paper::after {
-  content: '';
-  position: absolute;
-  bottom: 10px;
-  width: 40%;
-  height: 10px;
-  box-shadow: 0 5px 14px rgba(0,0,0,.7);
-  z-index: -1;
-  transition: all .3s ease-in-out;
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    width: 40%;
+    height: 10px;
+    box-shadow: 0 5px 14px rgba(0,0,0,.7);
+    z-index: -1;
+    transition: all .3s ease-in-out;
 }
 
 .paper::before {
-  left: 15px;
-  transform: skew(-5deg) rotate(-5deg);
+    left: 15px;
+    transform: skew(-5deg) rotate(-5deg);
 }
 
 .paper::after {
-  right: 15px;
-  transform: skew(5deg) rotate(5deg);
+    right: 15px;
+    transform: skew(5deg) rotate(5deg);
 }
 
 .paper:hover::before,
 .paper:hover::after {
-  box-shadow: 0 2px 14px rgba(0,0,0,.4);
+    box-shadow: 0 2px 14px rgba(0,0,0,.4);
 }
 
 .paper:hover::before {
-  left: 5px;
+    left: 5px;
 }
 
 .paper:hover::after {
-  right: 5px;
+    right: 5px;
 }
 
 
 /* Paper left */
 
 .paper-right {
-  position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 40px;
-  width: calc(100vw * 0.80);
-  max-width: 400px;
-  height: auto;
-  background: #f9f9ff;
-  border-radius: 2px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    width: calc(100vw * 0.80);
+    max-width: 400px;
+    height: auto;
+    background: #f9f9ff;
+    border-radius: 2px;
 }
 
 .paper-right::after {
-  content: '';
-  position: absolute;
-  bottom: 10px;
-  width: 40%;
-  height: 10px;
-  box-shadow: 0 5px 14px rgba(0,0,0,.7);
-  z-index: -1;
-  transition: all .3s ease-in-out;
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    width: 40%;
+    height: 10px;
+    box-shadow: 0 5px 14px rgba(0,0,0,.7);
+    z-index: -1;
+    transition: all .3s ease-in-out;
 }
 
 .paper-right::after {
-  right: 15px;
-  transform: skew(5deg) rotate(5deg);
+    right: 15px;
+    transform: skew(5deg) rotate(5deg);
 }
 
 .paper-right:hover::after {
-  box-shadow: 0 2px 14px rgba(0,0,0,.4);
+    box-shadow: 0 2px 14px rgba(0,0,0,.4);
 }
 
 .paper-right:hover::after {
-  right: 5px;
+    right: 5px;
 }
 
 /* Paper right */
 
 .paper-left {
-  position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 40px;
-  width: calc(100vw * 0.80);
-  max-width: 400px;
-  height: auto;
-  background: #f9f9ff;
-  border-radius: 2px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    width: calc(100vw * 0.80);
+    max-width: 400px;
+    height: auto;
+    background: #f9f9ff;
+    border-radius: 2px;
 }
 
 .paper-left::before {
-  content: '';
-  position: absolute;
-  bottom: 10px;
-  width: 40%;
-  height: 10px;
-  box-shadow: 0 5px 14px rgba(0,0,0,.7);
-  z-index: -1;
-  transition: all .3s ease-in-out;
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    width: 40%;
+    height: 10px;
+    box-shadow: 0 5px 14px rgba(0,0,0,.7);
+    z-index: -1;
+    transition: all .3s ease-in-out;
 }
 
 .paper-left::before {
-  left: 15px;
-  transform: skew(-5deg) rotate(-5deg);
+    left: 15px;
+    transform: skew(-5deg) rotate(-5deg);
 }
 
 .paper-left:hover::before {
-  box-shadow: 0 2px 14px rgba(0,0,0,.4);
+    box-shadow: 0 2px 14px rgba(0,0,0,.4);
 }
 
 .paper-left:hover::before {
-  left: 5px;
+    left: 5px;
 }
 
 
 /* Paper wide */
 
 .paper-wide {
-  position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 40px;
-  width: 75%;
-  margin: 0 auto;
-  height: auto;
-  background: #f9f9ff;
-  border-radius: 2px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    width: 75%;
+    margin: 0 auto;
+    height: auto;
+    background: #f9f9ff;
+    border-radius: 2px;
 }
 
 .paper-wide::before,
 .paper-wide::after {
-  content: '';
-  position: absolute;
-  bottom: 20px;
-  width: 40%;
-  height: 10px;
-  box-shadow: 0 5px 14px rgba(0,0,0,.7);
-  z-index: -1;
-  transition: all .3s ease-in-out;
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    width: 40%;
+    height: 10px;
+    box-shadow: 0 5px 14px rgba(0,0,0,.7);
+    z-index: -1;
+    transition: all .3s ease-in-out;
 }
 
 .paper-wide::before {
-  left: 15px;
-  transform: skew(-5deg) rotate(-5deg);
+    left: 15px;
+    transform: skew(-5deg) rotate(-5deg);
 }
 
 .paper-wide::after {
-  right: 15px;
-  transform: skew(5deg) rotate(5deg);
+    right: 15px;
+    transform: skew(5deg) rotate(5deg);
 }
 
 .paper-wide:hover::before,
 .paper-wide:hover::after {
-  box-shadow: 0 2px 14px rgba(0,0,0,.4);
+    box-shadow: 0 2px 14px rgba(0,0,0,.4);
 }
 
 .paper-wide:hover::before {
-  left: 5px;
+    left: 5px;
 }
 
 .paper-wide:hover::after {
-  right: 5px;
+    right: 5px;
 }

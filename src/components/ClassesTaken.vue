@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="fade-in-right">
         <p class="w-fit m-auto text-xl">Classes taken</p>
         <div class="paper flex flex-col space-y-2 mt-4 pt-4">
 
