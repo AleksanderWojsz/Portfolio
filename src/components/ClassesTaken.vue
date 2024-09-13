@@ -4,16 +4,15 @@
 
 <template>
     <div class="fade-in-right">
-        <p class="w-fit m-auto text-xl">Classes taken</p>
-        <div class="paper flex flex-col space-y-2 mt-4 pt-4">
+        <p class="w-fit m-auto text-xl">Other classes taken</p>
+        <div class="paper-thin flex flex-col space-y-2 mt-4 pt-4">
 
-            <list_el>These</list_el>
-            <list_el>And these</list_el>
-            <list_el>And these</list_el>
-            <list_el>And these</list_el>
-            <list_el>And these</list_el>
-            <list_el>And these</list_el>
-            <list_el>And these</list_el>
+            <list_el>Mathematical analysis</list_el>
+            <list_el>Linear Algebra</list_el>
+            <list_el>Set theory</list_el>
+            <list_el>Discrete Mathematics</list_el>
+            <list_el>Probability theory</list_el>
+            <list_el>Languages and Automata Theory</list_el>
 
         </div>
     </div>

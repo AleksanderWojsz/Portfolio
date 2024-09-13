@@ -5,13 +5,16 @@ import {onMounted, ref} from "vue";
 import NavBar from "@/components/NavBar.vue";
 
 const isMobileView = ref(false)
+const sideBarOffSet = 20; // [px]
+
 function checkWindowSize() {
     isMobileView.value = window.innerWidth < 1400;
 
     // Sets `left` attribute of `left-col` to minus its width
     const leftCol = document.getElementById("left-col");
     if (leftCol) {
-        leftCol.style.left = "-" + document.getElementById("sidebar").offsetWidth.toString() + "px"
+        const offset = document.getElementById("sidebar").offsetWidth + sideBarOffSet
+        leftCol.style.left = "-" + offset.toString() + "px"
     }
 }
 

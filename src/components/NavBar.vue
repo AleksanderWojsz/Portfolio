@@ -65,15 +65,6 @@ const route = useRoute();
         width: 60px;
         height: 60px;
         font-size: 14px;
-
-        background-color: #ffffff;
-        border-bottom: 1px solid #efefef;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        box-shadow: 0 7px 10px rgba(0,0,0,0.2);
-        transition: all 0.2s;
     }
 }
 

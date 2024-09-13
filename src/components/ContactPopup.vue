@@ -8,7 +8,7 @@ const email = "wojszalek@gmail.com"
 
 function copyToClipboard() {
   navigator.clipboard.writeText(email);
-  document.getElementById("copy_img").src="src/assets/checkmark.png";
+  document.getElementById("copy_img").src="/src/assets/checkmark.png";
 }
 
 </script>

@@ -112,7 +112,7 @@ body {
 /* Paper sheet */
 /* https://codepen.io/martinwolf/pen/GRaWPy */
 
-.paper {
+.paper-thin {
     position: relative;
     padding-left: 10px;
     padding-right: 10px;
@@ -124,8 +124,8 @@ body {
     border-radius: 2px;
 }
 
-.paper::before,
-.paper::after {
+.paper-thin::before,
+.paper-thin::after {
     content: '';
     position: absolute;
     bottom: 10px;
@@ -136,26 +136,26 @@ body {
     transition: all .3s ease-in-out;
 }
 
-.paper::before {
+.paper-thin::before {
     left: 15px;
     transform: skew(-5deg) rotate(-5deg);
 }
 
-.paper::after {
+.paper-thin::after {
     right: 15px;
     transform: skew(5deg) rotate(5deg);
 }
 
-.paper:hover::before,
-.paper:hover::after {
+.paper-thin:hover::before,
+.paper-thin:hover::after {
     box-shadow: 0 2px 14px rgba(0,0,0,.4);
 }
 
-.paper:hover::before {
+.paper-thin:hover::before {
     left: 5px;
 }
 
-.paper:hover::after {
+.paper-thin:hover::after {
     right: 5px;
 }
 
@@ -167,8 +167,8 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 40px;
-    width: calc(100vw * 0.80);
-    max-width: 400px;
+    width: 100%;
+    max-width: 700px;
     height: auto;
     background: #f9f9ff;
     border-radius: 2px;
@@ -177,7 +177,7 @@ body {
 .paper-right::after {
     content: '';
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     width: 40%;
     height: 10px;
     box-shadow: 0 5px 14px rgba(0,0,0,.7);
@@ -205,8 +205,8 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 40px;
-    width: calc(100vw * 0.80);
-    max-width: 400px;
+    width: 100%;
+    max-width: 700px;
     height: auto;
     background: #f9f9ff;
     border-radius: 2px;
@@ -215,7 +215,7 @@ body {
 .paper-left::before {
     content: '';
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     width: 40%;
     height: 10px;
     box-shadow: 0 5px 14px rgba(0,0,0,.7);
@@ -237,22 +237,24 @@ body {
 }
 
 
-/* Paper wide */
+/* Paper */
 
-.paper-wide {
+.paper {
     position: relative;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 40px;
-    width: 75%;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    margin-left: 10px;
+    margin-right: 10px;
     height: auto;
     background: #f9f9ff;
     border-radius: 2px;
 }
 
-.paper-wide::before,
-.paper-wide::after {
+.paper::before,
+.paper::after {
     content: '';
     position: absolute;
     bottom: 20px;
@@ -263,25 +265,25 @@ body {
     transition: all .3s ease-in-out;
 }
 
-.paper-wide::before {
+.paper::before {
     left: 15px;
     transform: skew(-5deg) rotate(-5deg);
 }
 
-.paper-wide::after {
+.paper::after {
     right: 15px;
     transform: skew(5deg) rotate(5deg);
 }
 
-.paper-wide:hover::before,
-.paper-wide:hover::after {
+.paper:hover::before,
+.paper:hover::after {
     box-shadow: 0 2px 14px rgba(0,0,0,.4);
 }
 
-.paper-wide:hover::before {
+.paper:hover::before {
     left: 5px;
 }
 
-.paper-wide:hover::after {
+.paper:hover::after {
     right: 5px;
 }
