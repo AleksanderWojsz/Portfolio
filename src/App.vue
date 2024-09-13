@@ -9,7 +9,10 @@ function checkWindowSize() {
     isMobileView.value = window.innerWidth < 1400;
 
     // Sets `left` attribute of `left-col` to minus its width
-    document.getElementById("left-col").style.left = "-" + document.getElementById("sidebar").offsetWidth.toString() + "px"
+    const leftCol = document.getElementById("left-col");
+    if (leftCol) {
+        leftCol.style.left = "-" + document.getElementById("sidebar").offsetWidth.toString() + "px"
+    }
 }
 
 onMounted(() => {

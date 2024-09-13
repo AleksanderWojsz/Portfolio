@@ -22,12 +22,16 @@ const route = useRoute();
 
         <div class="folded-list-element" style="cursor: pointer;" v-on:click="show_popup = true">Contact</div>
 
-        <a class="folded-list-element" href="https://github.com/AleksanderWojsz">
-            <img alt="GitHub" src="/src/assets/github-mark.png" width="50" height="50">
+        <a target="_blank" class="folded-list-element" href="https://pl.linkedin.com/in/aleksander-wojsz-181038240">
+            <img alt="LinkedIn" src="/src/assets/linkedin.png" width="40" height="40">
         </a>
 
-        <a class="folded-list-element" href="https://pl.linkedin.com/in/aleksander-wojsz-181038240">
-            <img alt="LinkedIn" src="/src/assets/linkedin.png" width="50" height="50">
+        <a target="_blank" class="folded-list-element" href="https://github.com/AleksanderWojsz">
+            <img alt="GitHub" src="/src/assets/github-mark.png" width="40" height="40">
+        </a>
+
+        <a target="_blank" class="folded-list-element" href="https://stackexchange.com/users/29134076/michał?tab=top">
+            <img alt="StackExchange" src="/src/assets/stack_exchange.png" width="40" height="40">
         </a>
     </div>
     <ContactPopup v-if="show_popup" v-bind:closeContactPopup="closeContactPopup"></ContactPopup>
@@ -44,6 +48,8 @@ const route = useRoute();
 .folded-list-element {
     width: 70px;
     height: 70px;
+    font-size: 15px;
+
     background-color: #ffffff;
     border-bottom: 1px solid #efefef;
     display: flex;
@@ -52,6 +58,23 @@ const route = useRoute();
     text-align: center;
     box-shadow: 0 7px 10px rgba(0,0,0,0.2);
     transition: all 0.2s;
+}
+
+@media screen and (max-width:919px) {
+    .folded-list-element {
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+
+        background-color: #ffffff;
+        border-bottom: 1px solid #efefef;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0 7px 10px rgba(0,0,0,0.2);
+        transition: all 0.2s;
+    }
 }
 
 .folded-list-element:nth-child(odd) {

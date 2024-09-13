@@ -20,15 +20,18 @@ const route = useRoute();
 
         <div class="folded-list-element" style="cursor: pointer;" v-on:click="show_popup = true">Contact</div>
 
-
         <div class="folded-list-element"></div>
 
-        <a class="folded-list-element" href="https://github.com/AleksanderWojsz">
-            <img alt="GitHub" src="/src/assets/github-mark.png" width="50" height="50">
+        <a target="_blank" class="folded-list-element" href="https://pl.linkedin.com/in/aleksander-wojsz-181038240">
+            <img alt="LinkedIn" src="/src/assets/linkedin.png" width="40" height="40">
         </a>
 
-        <a class="folded-list-element" href="https://pl.linkedin.com/in/aleksander-wojsz-181038240">
-            <img alt="LinkedIn" src="/src/assets/linkedin.png" width="50" height="50">
+        <a target="_blank" class="folded-list-element" href="https://github.com/AleksanderWojsz">
+            <img alt="GitHub" src="/src/assets/github-mark.png" width="40" height="40">
+        </a>
+
+        <a target="_blank" class="folded-list-element" href="https://stackexchange.com/users/29134076/michał?tab=top">
+            <img alt="StackExchange" src="/src/assets/stack_exchange.png" width="40" height="40">
         </a>
     </div>
     <ContactPopup v-if="show_popup" v-bind:closeContactPopup="closeContactPopup"></ContactPopup>

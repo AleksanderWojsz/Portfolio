@@ -4,14 +4,23 @@ defineProps({
     closeContactPopup: Function,
 })
 
+const email = "wojszalek@gmail.com"
+
+function copyToClipboard() {
+  navigator.clipboard.writeText(email);
+  document.getElementById("copy_img").src="src/assets/checkmark.png";
+}
 
 </script>
 
 <template>
 <div v-on:click.self="closeContactPopup" class="popup">
     <div class="popup-inner">
-        <p>email: wojszalek@gmail.com</p>
-        <button class="absolute bottom-0 right-0 mb-4 mr-4" v-on:click.prevent="closeContactPopup">Close</button>
+        <div class="flex flex-row justify-between items-center">
+            <p id="email">email: {{email}}</p>
+            <img id="copy_img" src="/src/assets/copy_icon.png" class="cursor-pointer ml-1 pb-2 w-[30px] h-[40px]" v-on:click="copyToClipboard()" alt="copy_img">
+        </div>
+        <button class="absolute bottom-0 right-0 mb-3 mr-3" v-on:click.prevent="closeContactPopup">Close</button>
     </div>
 </div>
 </template>
@@ -36,10 +45,13 @@ defineProps({
     top: 38%;
     transform: translateY(-50%);
 
-    padding: 32px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    max-width: 500px;
+    width: fit-content;
 }
 
 </style>
