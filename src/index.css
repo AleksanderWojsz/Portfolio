@@ -60,7 +60,6 @@ body {
 
 
 .fade-in-right {
-    overflow:hidden; /* Otherwise translateX resizes page */
     animation: fadeInAnimationRight;
     animation-duration: 0.8s;
     animation-iteration-count: 1;
