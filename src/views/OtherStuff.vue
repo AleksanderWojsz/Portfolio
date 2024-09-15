@@ -11,7 +11,7 @@
 
         <div class="paper">
             <p class="text-center text-lg mt-2">If I were Ben Barnes</p>
-            <div class="flex md:flex-row md:space-x-2 md:justify-evenly md:items-end flex-col space-y-2">
+            <div class="flex md:flex-row md:space-x-2 md:justify-evenly md:items-end flex-col space-y-2 items-center">
                 <div>
                     <p class="w-fit mx-auto my-3"><a class="text-sky-600" href="https://www.pinterest.com/pin/men-men-everywhere--397724210840908125/">Original</a></p>
                     <img class="h-[400px] w-auto" src="/Ben_Barnes.jfif" alt="Ben_Barnes">
