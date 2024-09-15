@@ -59,6 +59,31 @@ body {
 }
 
 
+.fade-in-right {
+    overflow:hidden; /* Otherwise translateX resizes page */
+    animation: fadeInAnimationRight;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+}
+
+.fade-in-fast-right {
+    animation: fadeInAnimationRight;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeInAnimationRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+
 .fade-in-top {
     animation: fadeInAnimationTop;
     animation-duration: 0.8s;
