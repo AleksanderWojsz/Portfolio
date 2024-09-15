@@ -39,7 +39,7 @@ onMounted(() => {
                 <Sidebar></Sidebar>
             </div>
         </div>
-        <div v-else class="fixed mt-4 fade-in-top" style="z-index: 100; left: 50%;">
+        <div v-else class="fixed mt-4 fade-in-top" style="z-index: 100; left: 50%">
             <NavBar></NavBar>
         </div>
 
