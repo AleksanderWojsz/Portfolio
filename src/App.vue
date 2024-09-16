@@ -43,7 +43,7 @@ onMounted(() => {
             <NavBar></NavBar>
         </div>
 
-        <div class="pt-[90px]">
+        <div class="pt-[90px] relative" style="z-index: 10">
             <RouterView></RouterView>
         </div>
     </div>

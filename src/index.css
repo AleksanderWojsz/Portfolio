@@ -13,7 +13,7 @@ body {
 
 .fade-in {
     animation: fadeInAnimation;
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
     animation-iteration-count: 1;
 }
 
@@ -37,7 +37,7 @@ body {
 
 .fade-in-left {
     animation: fadeInAnimationLeft;
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
     animation-iteration-count: 1;
 }
 
@@ -61,7 +61,7 @@ body {
 
 .fade-in-right {
     animation: fadeInAnimationRight;
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
     animation-iteration-count: 1;
 }
 
@@ -85,7 +85,7 @@ body {
 
 .fade-in-top {
     animation: fadeInAnimationTop;
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
     animation-iteration-count: 1;
 }
 
@@ -286,4 +286,22 @@ body {
 
 .paper:hover::after {
     right: 5px;
+}
+
+
+
+/* paper-no-animation*/
+
+.paper-no-animation {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    width: 100%;
+    max-width: 700px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+    background: #f9f9ff;
+    border-radius: 2px;
 }

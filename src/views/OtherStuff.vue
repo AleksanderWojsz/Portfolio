@@ -4,12 +4,12 @@
 
 <template>
     <div class="flex flex-col items-center space-y-6 mt-10">
-        <div class="paper flex flex-col items-center">
+        <div class="fade-in-left paper-no-animation flex flex-col items-center">
             <p class="my-3 text-lg">An older photo I often have as profile picture</p>
             <img class="h-[400px] w-auto" src="/myphoto.jpg" alt="myphoto">
         </div>
 
-        <div class="paper">
+        <div class="fade-in-right paper-no-animation">
             <p class="text-center text-lg mt-2">If I were Ben Barnes</p>
             <div class="flex md:flex-row md:space-x-2 md:justify-evenly md:items-end flex-col space-y-2 items-center">
                 <div>
