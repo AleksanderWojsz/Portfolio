@@ -46,10 +46,10 @@ function copyToClipboard() {
     transform: translateY(-50%);
 
     padding-top: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     width: fit-content;
 }
