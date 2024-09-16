@@ -22,7 +22,7 @@ const route = useRoute();
 
         <div class="folded-list-element"></div>
 
-        <a target="_blank" class="folded-list-element" href="https://pl.linkedin.com/in/aleksander-wojsz-181038240">
+        <a target="_blank" class="folded-list-element" href="https://pl.linkedin.com/in/aleksander-wojsz">
             <img alt="LinkedIn" src="/src/assets/linkedin.png" width="40" height="40">
         </a>
 
@@ -30,7 +30,7 @@ const route = useRoute();
             <img alt="GitHub" src="/src/assets/github-mark.png" width="40" height="40">
         </a>
 
-        <a target="_blank" class="folded-list-element" href="https://stackexchange.com/users/29134076/michał?tab=top">
+        <a target="_blank" class="folded-list-element" href="https://stackexchange.com/users/29134076/aleksander-wojsz?tab=top">
             <img alt="StackExchange" src="/src/assets/stack_exchange.png" width="40" height="40">
         </a>
     </div>
